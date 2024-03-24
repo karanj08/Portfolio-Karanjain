@@ -1,4 +1,4 @@
-import Heroimage from "../assets/heroImage.png";
+import Heroimage from "../assets/heroImage5.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
@@ -8,7 +8,7 @@ function Home() {
       className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-800 text-white"
       name="home"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row pt-10">
+      <div className="max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full px-4 md:flex-row pt-10">
         <div className="flex flex-col justify-center h-full px-12">
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold ">
             I'm a Frontend Developer
@@ -33,11 +33,11 @@ function Home() {
           </div>
         </div>
 
-        <div>
+        <div className="rounded-2xl">
           <img
             src={Heroimage}
             alt="My Profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className=" mt-14 md:m-0 mx-auto w-1/2 sm:w-2/3 md:w-full object-cover sm:rounded-lg rounded-full"
           />
         </div>
       </div>
@@ -46,3 +46,4 @@ function Home() {
 }
 
 export default Home;
+// className=" mt-14 md:m-0 mx-auto w-[250px] object-contain h-[300px] md:w-[350px] md:h-[300px] lg:h-[450px] lg:w-[500px] rounded-lg"

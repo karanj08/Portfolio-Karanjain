@@ -1,30 +1,35 @@
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import amazon from "../assets/portfolio/amazon.png";
+import promptopia from "../assets/portfolio/promptopia.png";
+import booking from "../assets/portfolio/booking.com.png";
+import basicwebsite from "../assets/portfolio/basicwebsite.png";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
-import usestate from "../assets/portfolio/usestate.jpg";
 
 function Portfolio() {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-      href: "https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage",
-      code: "https://github.com/karanj08",
+      src: amazon,
+      href: "https://amazon-clone-xi-eosin.vercel.app/",
+      code: "https://github.com/karanj08?tab=repositories",
     },
     {
       id: 2,
-      src: installNode,
+      src: promptopia,
+      href: "https://promptopia-psi-gold.vercel.app/",
+      code: "https://github.com/karanj08?tab=repositories",
     },
     {
       id: 3,
-      src: navbar,
+      src: booking,
+      href: "https://booking-2-clone.vercel.app/",
+      code: "https://github.com/karanj08?tab=repositories",
     },
     {
       id: 4,
-      src: reactParallax,
+      src: basicwebsite,
+      href: "https://basicwebsite-three.vercel.app/",
+      code: "https://github.com/karanj08?tab=repositories",
     },
     {
       id: 5,
