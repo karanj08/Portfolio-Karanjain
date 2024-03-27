@@ -2,8 +2,15 @@ import amazon from "../assets/portfolio/amazon.png";
 import promptopia from "../assets/portfolio/promptopia.png";
 import booking from "../assets/portfolio/booking.com.png";
 import basicwebsite from "../assets/portfolio/basicwebsite.png";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import tourtravel from "../assets/portfolio/tour-travel.png";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import {
+  RiJavascriptFill,
+  RiReactjsFill,
+  RiHtml5Fill,
+  RiCss3Fill,
+} from "react-icons/ri";
+import { SiTailwindcss } from "react-icons/si";
 
 function Portfolio() {
   const portfolios = [
@@ -11,29 +18,31 @@ function Portfolio() {
       id: 1,
       src: amazon,
       href: "https://amazon-clone-xi-eosin.vercel.app/",
-      code: "https://github.com/karanj08?tab=repositories",
+      code: "https://github.com/karanj08/amazon-clone",
     },
     {
       id: 2,
       src: promptopia,
       href: "https://promptopia-psi-gold.vercel.app/",
-      code: "https://github.com/karanj08?tab=repositories",
+      code: "https://github.com/karanj08/promptopia",
     },
     {
       id: 3,
-      src: booking,
-      href: "https://booking-2-clone.vercel.app/",
-      code: "https://github.com/karanj08?tab=repositories",
+      src: tourtravel,
+      href: "https://tour-travel-ruddy.vercel.app/",
+      code: "https://github.com/karanj08/tour-travel",
     },
     {
       id: 4,
-      src: basicwebsite,
-      href: "https://basicwebsite-three.vercel.app/",
-      code: "https://github.com/karanj08?tab=repositories",
+      src: booking,
+      href: "https://booking-2-clone.vercel.app/",
+      code: "https://github.com/karanj08/Booking-2-clone",
     },
     {
       id: 5,
-      src: reactSmooth,
+      src: basicwebsite,
+      href: "https://basicwebsite-three.vercel.app/",
+      code: "https://github.com/karanj08/basicwebsite",
     },
     {
       id: 6,
@@ -73,9 +82,16 @@ function Portfolio() {
                 alt=""
                 className="rounded-md duration-300 hover:scale-105"
               />
+              <div className="p-2 flex space-x-1">
+                <RiHtml5Fill />
+                <RiCss3Fill />
+                <RiJavascriptFill />
+                <SiTailwindcss />
+                <RiReactjsFill />
+              </div>
               <div className="flex items-center justify-center">
                 <a
-                  className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-300"
+                  className="w-1/2 px-6 py-1 mx-4 my-2 hover:scale-105 duration-300"
                   onClick={(portfolio) => demosite}
                   href={portfolio.href}
                   target="_blank"
@@ -84,7 +100,7 @@ function Portfolio() {
                   Demo
                 </a>
                 <a
-                  className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-300"
+                  className="w-1/2 px-6 py-1 mx-4 my-2 hover:scale-105 duration-300"
                   href={portfolio.code}
                   target="_blank"
                   rel="nonreferrer"
