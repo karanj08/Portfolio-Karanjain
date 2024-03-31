@@ -16,7 +16,7 @@ function Home() {
           <p className="text-gray-500 py-4 max-w-md">
             I have a knowledge of a Frontend Development. I love to work on web
             application using technologies like React, Tailwind, Next JS and
-            Mysql
+            Postgresql
           </p>
           <div className="">
             <Link
