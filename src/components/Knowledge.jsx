@@ -3,9 +3,10 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
+import mongoDB from "../assets/mongoDB.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import postgresql from "../assets/postgresql.png";
 
 function Knowledge() {
   const lang = [
@@ -47,12 +48,18 @@ function Knowledge() {
     },
     {
       id: 7,
-      src: graphql,
-      title: "GraphQL",
+      src: mongoDB,
+      title: "mongoDB",
       style: "shadow-pink-400",
     },
     {
       id: 8,
+      src: postgresql,
+      title: "postgresql",
+      style: "shadow-pink-400",
+    },
+    {
+      id: 9,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",

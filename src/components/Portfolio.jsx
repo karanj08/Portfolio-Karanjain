@@ -1,16 +1,16 @@
 import amazon from "../assets/portfolio/amazon.png";
 import promptopia from "../assets/portfolio/promptopia.png";
 import booking from "../assets/portfolio/booking.com.png";
-import basicwebsite from "../assets/portfolio/basicwebsite.png";
+import mapty from "../assets/portfolio/mapty.png";
 import tourtravel from "../assets/portfolio/tour-travel.png";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import bankist from "../assets/portfolio/bankist.png";
 import {
   RiJavascriptFill,
   RiReactjsFill,
   RiHtml5Fill,
   RiCss3Fill,
 } from "react-icons/ri";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiMongodb } from "react-icons/si";
 
 function Portfolio() {
   const portfolios = [
@@ -19,34 +19,69 @@ function Portfolio() {
       src: amazon,
       href: "https://amazon-clone-xi-eosin.vercel.app/",
       code: "https://github.com/karanj08/amazon-clone",
+      tech: [
+        <RiHtml5Fill />,
+        <RiCss3Fill />,
+        <RiJavascriptFill />,
+        <RiReactjsFill />,
+        <SiTailwindcss />,
+        <SiNextdotjs />,
+      ],
     },
     {
       id: 2,
       src: promptopia,
       href: "https://promptopia-psi-gold.vercel.app/",
       code: "https://github.com/karanj08/promptopia",
+      tech: [
+        <RiHtml5Fill />,
+        <RiCss3Fill />,
+        <RiJavascriptFill />,
+        <RiReactjsFill />,
+        <SiTailwindcss />,
+        <SiNextdotjs />,
+        <SiMongodb />,
+      ],
     },
     {
       id: 3,
       src: tourtravel,
       href: "https://tour-travel-ruddy.vercel.app/",
       code: "https://github.com/karanj08/tour-travel",
+      tech: [
+        <RiHtml5Fill />,
+        <RiCss3Fill />,
+        <RiJavascriptFill />,
+        <RiReactjsFill />,
+        <SiTailwindcss />,
+      ],
     },
     {
       id: 4,
       src: booking,
       href: "https://booking-2-clone.vercel.app/",
       code: "https://github.com/karanj08/Booking-2-clone",
+      tech: [
+        <RiHtml5Fill />,
+        <RiCss3Fill />,
+        <RiJavascriptFill />,
+        <RiReactjsFill />,
+        <SiTailwindcss />,
+      ],
     },
     {
       id: 5,
-      src: basicwebsite,
-      href: "https://basicwebsite-three.vercel.app/",
-      code: "https://github.com/karanj08/basicwebsite",
+      src: bankist,
+      href: "https://bankist-ivory-rho.vercel.app/",
+      code: "https://github.com/karanj08/Booking-2-clone",
+      tech: [<RiHtml5Fill />, <RiCss3Fill />, <RiJavascriptFill />],
     },
     {
       id: 6,
-      src: reactWeather,
+      src: mapty,
+      href: "https://mapty-ivory.vercel.app/",
+      code: "https://github.com/karanj08/Mapty",
+      tech: [<RiHtml5Fill />, <RiCss3Fill />, <RiJavascriptFill />],
     },
   ];
 
@@ -61,7 +96,7 @@ function Portfolio() {
   return (
     <div
       name="portfolio"
-      className=" bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className=" bg-gradient-to-b from-black to-gray-800 w-full text-white md:px-14 p-4"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -83,11 +118,14 @@ function Portfolio() {
                 className="rounded-md duration-300 hover:scale-105"
               />
               <div className="p-2 flex space-x-1">
-                <RiHtml5Fill />
+                {/* <RiHtml5Fill />
                 <RiCss3Fill />
                 <RiJavascriptFill />
                 <SiTailwindcss />
-                <RiReactjsFill />
+                <RiReactjsFill /> */}
+                {portfolio.tech.map((port, i) => (
+                  <div key={i}>{port}</div>
+                ))}
               </div>
               <div className="flex items-center justify-center">
                 <a
