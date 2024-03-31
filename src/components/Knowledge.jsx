@@ -68,7 +68,7 @@ function Knowledge() {
   return (
     <div
       name="knowledge"
-      className="bg-gradient-to-b from-gray-800 to-black w-full md:px-14 p-4"
+      className="bg-gradient-to-b from-gray-800 to-black w-full md:px-14 py-14 p-4"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>

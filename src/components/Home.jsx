@@ -1,6 +1,7 @@
 import Heroimage from "../assets/heroImage5.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import { ReactTyped } from "react-typed";
 
 function Home() {
   return (
@@ -8,11 +9,21 @@ function Home() {
       className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-800 text-white"
       name="home"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full px-4 md:flex-row pt-10">
-        <div className="flex flex-col justify-center h-full px-12">
+      <div className="max-w-screen-lg flex flex-col-reverse items-center  h-full px-4 md:flex-row pt-10  justify-between mx-auto">
+        <div className="flex flex-col justify-center h-full px-12 sm:w-[800px] w-full">
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold ">
-            I'm a Frontend Developer
+            I'm a{" "}
+            <span>
+              <ReactTyped
+                strings={["Karan Jain", "Frontend Developer"]}
+                typeSpeed={120}
+                backSpeed={150}
+                className="text-4xl md:text-5xl lg:text-7xl font-bold text-indigo-500"
+                loop
+              />
+            </span>
           </h2>
+
           <p className="text-gray-500 py-4 max-w-md">
             I have a knowledge of a Frontend Development. I love to work on web
             application using technologies like React, Tailwind, Next JS and
@@ -33,11 +44,11 @@ function Home() {
           </div>
         </div>
 
-        <div className="rounded-2xl">
+        <div className="rounded-2xl ">
           <img
             src={Heroimage}
             alt="My Profile"
-            className=" mt-14 md:m-0 mx-auto w-1/2 sm:w-2/3 md:w-full object-cover sm:rounded-lg rounded-full"
+            className="ml-4 mx-auto object-cover w-[100px] sm:w-[300px] sm:rounded-lg rounded-full mt-14"
           />
         </div>
       </div>

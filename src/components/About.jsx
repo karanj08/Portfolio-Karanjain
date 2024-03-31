@@ -2,7 +2,7 @@ function About() {
   return (
     <div
       name="about"
-      className="w-full md:px-14 p-4 bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full md:px-14 p-4 bg-gradient-to-b from-gray-800 to-black text-white py-14"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full ">
         <div className="pb-8">
@@ -10,7 +10,7 @@ function About() {
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl">
           Hello! I&apos;m Karan jain👋
           <br />
           As a mechanical engineer turned web developer, I thrive on the
