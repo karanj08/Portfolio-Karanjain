@@ -27,6 +27,7 @@ function Portfolio() {
         <SiTailwindcss />,
         <SiNextdotjs />,
       ],
+      users: [],
     },
     {
       id: 2,
@@ -42,6 +43,7 @@ function Portfolio() {
         <SiNextdotjs />,
         <SiMongodb />,
       ],
+      users: [],
     },
     {
       id: 3,
@@ -55,6 +57,7 @@ function Portfolio() {
         <RiReactjsFill />,
         <SiTailwindcss />,
       ],
+      users: [],
     },
     {
       id: 4,
@@ -68,6 +71,7 @@ function Portfolio() {
         <RiReactjsFill />,
         <SiTailwindcss />,
       ],
+      users: [],
     },
     {
       id: 5,
@@ -75,6 +79,11 @@ function Portfolio() {
       href: "https://bankist-ivory-rho.vercel.app/",
       code: "https://github.com/karanj08/Booking-2-clone",
       tech: [<RiHtml5Fill />, <RiCss3Fill />, <RiJavascriptFill />],
+      users: [
+        { user: "kj", pin: "8899" },
+        { user: "kd", pin: "0911" },
+        { user: "ap", pin: "0311" },
+      ],
     },
     {
       id: 6,
@@ -82,6 +91,7 @@ function Portfolio() {
       href: "https://mapty-ivory.vercel.app/",
       code: "https://github.com/karanj08/Mapty",
       tech: [<RiHtml5Fill />, <RiCss3Fill />, <RiJavascriptFill />],
+      users: [],
     },
   ];
 
@@ -117,15 +127,24 @@ function Portfolio() {
                 alt=""
                 className="rounded-md duration-300 hover:scale-105"
               />
-              <div className="p-2 flex space-x-1">
+              <div className="flex space-x-1 justify-between">
                 {/* <RiHtml5Fill />
                 <RiCss3Fill />
                 <RiJavascriptFill />
                 <SiTailwindcss />
                 <RiReactjsFill /> */}
-                {portfolio.tech.map((port, i) => (
-                  <div key={i}>{port}</div>
-                ))}
+                <div className="flex p-2">
+                  {portfolio.tech.map((port, i) => (
+                    <div key={i}>{port}</div>
+                  ))}
+                </div>
+                <div className="flex gap-1">
+                  {portfolio.users.map((items, i) => (
+                    <div className="text-white font-semibold ">
+                      {items.user}:{items.pin}
+                    </div>
+                  ))}
+                </div>
               </div>
               <div className="flex items-center justify-center">
                 <a
