@@ -20,10 +20,10 @@ const navitem = [
     id: 4,
     link: "knowledge",
   },
-  {
-    id: 5,
-    link: "contact",
-  },
+  // {
+  //   id: 5,
+  //   link: "contact",
+  // },
 ];
 
 const NavBar = () => {

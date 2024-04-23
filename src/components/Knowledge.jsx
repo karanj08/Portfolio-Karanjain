@@ -7,6 +7,9 @@ import mongoDB from "../assets/mongoDB.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import postgresql from "../assets/postgresql.png";
+import nodejs from "../assets/node.png";
+import express from "../assets/express.png";
+import redux from "../assets/redux.png";
 
 function Knowledge() {
   const lang = [
@@ -50,16 +53,34 @@ function Knowledge() {
       id: 7,
       src: mongoDB,
       title: "mongoDB",
-      style: "shadow-pink-400",
+      style: "shadow-green-400",
     },
     {
       id: 8,
       src: postgresql,
       title: "postgresql",
-      style: "shadow-pink-400",
+      style: "shadow-blue-400",
     },
     {
       id: 9,
+      src: nodejs,
+      title: "Nodejs",
+      style: "shadow-green-400",
+    },
+    {
+      id: 10,
+      src: express,
+      title: "Exprees",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 11,
+      src: redux,
+      title: "Redux",
+      style: "shadow-purple-400",
+    },
+    {
+      id: 12,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",

@@ -16,7 +16,7 @@ function App() {
       <About />
       <Portfolio />
       <Knowledge />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }

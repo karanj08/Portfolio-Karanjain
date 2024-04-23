@@ -15,7 +15,7 @@ function Home() {
             I'm a{" "}
             <span>
               <ReactTyped
-                strings={["Karan Jain", "Frontend Developer"]}
+                strings={["Karan Jain", "Full-stack Developer"]}
                 typeSpeed={120}
                 backSpeed={150}
                 className="text-4xl md:text-5xl lg:text-7xl font-bold text-indigo-500"
@@ -25,7 +25,7 @@ function Home() {
           </h2>
 
           <p className="text-gray-500 py-4 max-w-md">
-            I have a knowledge of a Frontend Development. I love to work on web
+            I have a knowledge of a Fullstack Development. I love to work on web
             application using technologies like React, Tailwind, Next JS and
             Postgresql
           </p>
