@@ -4,6 +4,7 @@ import booking from "../assets/portfolio/booking.com.png";
 import mapty from "../assets/portfolio/mapty.png";
 import tourtravel from "../assets/portfolio/tour-travel.png";
 import bankist from "../assets/portfolio/bankist.png";
+import tictactoe from "../assets/portfolio/tictactoe.png";
 import {
   RiJavascriptFill,
   RiReactjsFill,
@@ -47,6 +48,19 @@ function Portfolio() {
     },
     {
       id: 3,
+      src: tictactoe,
+      href: "https://tic-tac-toee-beta.vercel.app/",
+      code: "https://github.com/karanj08/tic-tac-toe",
+      tech: [
+        <RiHtml5Fill />,
+        <RiCss3Fill />,
+        <RiJavascriptFill />,
+        <RiReactjsFill />,
+      ],
+      users: [],
+    },
+    {
+      id: 4,
       src: tourtravel,
       href: "https://tour-travel-ruddy.vercel.app/",
       code: "https://github.com/karanj08/tour-travel",
@@ -60,7 +74,7 @@ function Portfolio() {
       users: [],
     },
     {
-      id: 4,
+      id: 5,
       src: booking,
       href: "https://booking-2-clone.vercel.app/",
       code: "https://github.com/karanj08/Booking-2-clone",
@@ -74,7 +88,7 @@ function Portfolio() {
       users: [],
     },
     {
-      id: 5,
+      id: 6,
       src: bankist,
       href: "https://bankist-ivory-rho.vercel.app/",
       code: "https://github.com/karanj08/Booking-2-clone",
@@ -86,7 +100,7 @@ function Portfolio() {
       ],
     },
     {
-      id: 6,
+      id: 7,
       src: mapty,
       href: "https://mapty-ivory.vercel.app/",
       code: "https://github.com/karanj08/Mapty",
