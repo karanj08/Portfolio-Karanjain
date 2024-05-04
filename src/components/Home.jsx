@@ -12,10 +12,10 @@ function Home() {
       <div className="max-w-screen-lg flex flex-col-reverse items-center  h-full px-4 md:flex-row pt-10  justify-between mx-auto">
         <div className="flex flex-col justify-center h-full px-12 sm:w-[800px] w-full">
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold ">
-            I'm a{" "}
+            I'm{" "}
             <span>
               <ReactTyped
-                strings={["Karan Jain", "Full-stack Developer"]}
+                strings={["Karan Jain.", "a Full-stack Developer."]}
                 typeSpeed={120}
                 backSpeed={150}
                 className="text-4xl md:text-5xl lg:text-7xl font-bold text-indigo-500"
@@ -44,13 +44,13 @@ function Home() {
           </div>
         </div>
 
-        <div className="rounded-2xl ">
+        {/* <div className="rounded-2xl ">
           <img
             src={Heroimage}
             alt="My Profile"
             className="ml-4 mx-auto object-cover w-[100px] sm:w-[300px] sm:rounded-lg rounded-full mt-14"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

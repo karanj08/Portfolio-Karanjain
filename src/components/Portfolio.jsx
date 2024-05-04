@@ -5,6 +5,7 @@ import mapty from "../assets/portfolio/mapty.png";
 import tourtravel from "../assets/portfolio/tour-travel.png";
 import bankist from "../assets/portfolio/bankist.png";
 import tictactoe from "../assets/portfolio/tictactoe.png";
+import taskmanagment from "../assets/portfolio/task-managment.png";
 import {
   RiJavascriptFill,
   RiReactjsFill,
@@ -12,21 +13,25 @@ import {
   RiCss3Fill,
 } from "react-icons/ri";
 import { SiTailwindcss, SiNextdotjs, SiMongodb } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
 
 function Portfolio() {
   const portfolios = [
     {
-      id: 1,
-      src: amazon,
-      href: "https://amazon-clone-xi-eosin.vercel.app/",
-      code: "https://github.com/karanj08/amazon-clone",
+      id: 0,
+      src: taskmanagment,
+      href: "https://task-management-beta-nine.vercel.app/",
+      code: "https://github.com/karanj08/Task-Management",
       tech: [
         <RiHtml5Fill />,
         <RiCss3Fill />,
         <RiJavascriptFill />,
         <RiReactjsFill />,
         <SiTailwindcss />,
-        <SiNextdotjs />,
+        <FaNodeJs />,
+        <SiMongodb />,
+        <SiExpress />,
       ],
       users: [],
     },
